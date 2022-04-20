@@ -1,0 +1,8 @@
+D:\SAE_archive\Software Design Patterns\SoftwareDesignPatterns\SoftwareDesignPatterns\bin\Debug\SoftwareDesignPatterns.exe.config
+D:\SAE_archive\Software Design Patterns\SoftwareDesignPatterns\SoftwareDesignPatterns\bin\Debug\SoftwareDesignPatterns.exe
+D:\SAE_archive\Software Design Patterns\SoftwareDesignPatterns\SoftwareDesignPatterns\bin\Debug\SoftwareDesignPatterns.pdb
+D:\SAE_archive\Software Design Patterns\SoftwareDesignPatterns\SoftwareDesignPatterns\obj\Debug\SoftwareDesignPatterns.csproj.AssemblyReference.cache
+D:\SAE_archive\Software Design Patterns\SoftwareDesignPatterns\SoftwareDesignPatterns\obj\Debug\SoftwareDesignPatterns.csproj.SuggestedBindingRedirects.cache
+D:\SAE_archive\Software Design Patterns\SoftwareDesignPatterns\SoftwareDesignPatterns\obj\Debug\SoftwareDesignPatterns.csproj.CoreCompileInputs.cache
+D:\SAE_archive\Software Design Patterns\SoftwareDesignPatterns\SoftwareDesignPatterns\obj\Debug\SoftwareDesignPatterns.exe
+D:\SAE_archive\Software Design Patterns\SoftwareDesignPatterns\SoftwareDesignPatterns\obj\Debug\SoftwareDesignPatterns.pdb
