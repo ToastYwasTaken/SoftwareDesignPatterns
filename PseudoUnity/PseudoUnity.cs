@@ -15,15 +15,27 @@ namespace SoftwareDesignPatterns
     {
         public static void DontDestroyOnLoad(object obj)
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"Triggered DontDestroyOnLoad({obj})");
         }
         public static void Destroy(object obj)
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"Triggered Destroy({obj})");
         }
     }
     public class Component
     {
 
+    }
+    public class GameObject
+    {
+        public int transformPosition;
+        public GameObject(string name)
+        {
+
+        }
+        public void AddCapsuleCollider()
+        {
+            Console.WriteLine("Added capsule collider");
+        }
     }
 }

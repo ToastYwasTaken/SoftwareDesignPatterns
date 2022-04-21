@@ -10,7 +10,9 @@ namespace SoftwareDesignPatterns
     /// Only one instance of the class is allowed
     /// to avoid errors due to multiple accessors 
     /// Example: GameManager, SoundManager
+    /// Link: https://www.dofactory.com/net/singleton-design-pattern
     /// </summary>
+    
     public class Singleton 
     {
         public static Singleton Instance { get; private set; }

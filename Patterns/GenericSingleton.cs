@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 /// Only one instance of the generic class is allowed
 /// to avoid errors due to multiple accessors 
 /// Example: GameManager, SoundManager
+/// Link: https://www.dofactory.com/net/singleton-design-pattern
 /// </summary>
 
 namespace SoftwareDesignPatterns
