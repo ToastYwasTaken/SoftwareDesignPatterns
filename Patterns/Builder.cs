@@ -25,9 +25,11 @@ namespace SoftwareDesignPatterns.Patterns
         }
         public void InstantiatePlayer(PlayerBuilder playerBuilder)
         {
+            Console.WriteLine("Starting to build new player...");
             playerBuilder.InitObject();
             playerBuilder.AddCollider();
             playerBuilder.SetPosition();
+            Console.WriteLine("Successfully created new player!");
         }
     }
 
@@ -46,17 +48,19 @@ namespace SoftwareDesignPatterns.Patterns
         {
             _player = new GameObject("ConcretePlayer");
             _playerSpeed = 120;
+            Console.WriteLine($"Called 'InitObject()' | created player: {_player} with speed: {_playerSpeed}");
         }
         public override void AddCollider()
         {
             //_gameObject.AddComponent<CapsuleCollider2D>();
             _player.AddCapsuleCollider();
+            Console.WriteLine($"Called 'AddCollider()' | added capsule collider to player: {_player}");
         }
-
         public override void SetPosition()
         {
             //_player.transform.position = new Vector2(5,5);
             _player.transformPosition = 2;
+            Console.WriteLine($"Called 'SetPosition()' | set position of player: {_player} to: {_player.transformPosition}");
         }
     }
 }

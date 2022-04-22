@@ -35,7 +35,7 @@ namespace SoftwareDesignPatterns
         }
         public void AddCapsuleCollider()
         {
-            Console.WriteLine("Added capsule collider");
+
         }
     }
 }

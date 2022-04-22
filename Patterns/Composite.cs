@@ -23,7 +23,6 @@ namespace SoftwareDesignPatterns.Patterns
         {
             _name = name;
         }
-
     }
 
     /// <summary>
@@ -49,7 +48,6 @@ namespace SoftwareDesignPatterns.Patterns
         public Directory(string name) : base(name)
         {
             Console.WriteLine($"Created directory: {_name}");
-
         }
 
         public List<FileSystemComponent> GetChildren()

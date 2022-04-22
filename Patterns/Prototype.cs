@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//TODO:nochma drüberschaun
 /// <summary>
 /// Copys and instantiates prototypes
 /// Differentiate between 'deep' and 'shallow' copies
@@ -20,15 +21,13 @@ namespace SoftwareDesignPatterns.Patterns
         public byte _green;
         public byte _blue;
         public byte _alpha;
-        public ColorOffset _offset;
 
-        public ColorPrototype(byte red, byte green, byte blue, byte alpha, ColorOffset offset)
+        public ColorPrototype(byte red, byte green, byte blue, byte alpha)
         {
             _red = red;
             _green = green;
             _blue = blue;
             _alpha = alpha;
-            _offset = offset;
         }
 
         public abstract ColorPrototype CloneShallowCopy();
@@ -37,7 +36,7 @@ namespace SoftwareDesignPatterns.Patterns
 
     public class Color : ColorPrototype
     {
-        public Color(byte red, byte green, byte blue, byte alpha, ColorOffset offset) : base(red, green, blue, alpha, offset)
+        public Color(byte red, byte green, byte blue, byte alpha) : base(red, green, blue, alpha)
         {
         }
 
@@ -55,18 +54,9 @@ namespace SoftwareDesignPatterns.Patterns
             colorPrototype._green = _green;
             colorPrototype._blue = _blue;
             colorPrototype._alpha = _alpha;
-            colorPrototype._offset = _offset.CloneShallowCopy();
             return colorPrototype;
         }
 
     }
 
-    public class ColorOffset
-    {
-        public int _offset;
-        public ColorOffset CloneShallowCopy()
-        {
-            return (ColorOffset)this.MemberwiseClone();
-        }
-    }
 }
