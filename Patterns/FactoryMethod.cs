@@ -25,15 +25,17 @@ namespace SoftwareDesignPatterns.Patterns
     {
         public override Item FactoryMethodA()
         {
+            Console.WriteLine("Creating new concrete Item A");
             return new ConcreteItemA(200, 1.8f, 1.0f);
         }
 
         public override Item FactoryMethodB()
         {
+            Console.WriteLine("Creating new concrete Item B");
             return new ConcreteItemB(140, 1.0f, 2.2f);
         }
     }
-
+    
     public abstract class Item
     {
         public int _value;
@@ -47,13 +49,24 @@ namespace SoftwareDesignPatterns.Patterns
             _resistanceMultiplier = resistanceMult;
         }
 
+        public void PrintItem()
+        {
+            Console.WriteLine($"Item with value: [{_value}] damage multiplier: [{_damageMultiplier}] resistance multiplier: [{_resistanceMultiplier}]");
+        }
+
     }
+    /// <summary>
+    /// A concrete item with certain stat-boosts
+    /// </summary>
     public class ConcreteItemA : Item
     {
         public ConcreteItemA(int value, float damageMult, float resistanceMult) : base(value, damageMult, resistanceMult)
         {
         }
     }
+    /// <summary>
+    /// A concrete item with certain stat-boosts
+    /// </summary>
     public class ConcreteItemB : Item
     {
         public ConcreteItemB(int value, float damageMult, float resistanceMult) : base(value, damageMult, resistanceMult)

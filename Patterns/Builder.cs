@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -35,7 +36,7 @@ namespace SoftwareDesignPatterns.Patterns
 
     public abstract class PlayerBuilder
     {
-        protected GameObject _player;
+        protected Player _player;
         protected int _playerSpeed;
         public abstract void InitObject();
         public abstract void AddCollider();
@@ -46,7 +47,7 @@ namespace SoftwareDesignPatterns.Patterns
     {
         public override void InitObject()
         {
-            _player = new GameObject("ConcretePlayer");
+            _player = new Player("ConcretePlayer");
             _playerSpeed = 120;
             Console.WriteLine($"Called 'InitObject()' | created player: {_player} with speed: {_playerSpeed}");
         }
@@ -59,8 +60,25 @@ namespace SoftwareDesignPatterns.Patterns
         public override void SetPosition()
         {
             //_player.transform.position = new Vector2(5,5);
-            _player.transformPosition = 2;
-            Console.WriteLine($"Called 'SetPosition()' | set position of player: {_player} to: {_player.transformPosition}");
+            _player._position = new Vector3(1, 1, 1);
+            Console.WriteLine($"Called 'SetPosition()' | set position of player: {_player} to: {_player._position}");
         }
+    }
+
+    public class Player
+    {
+        public string _name;
+        public Vector3 _position;
+        public Player(string name)
+        {
+            _name = name;
+            _position = new Vector3(0, 0, 0);
+        }
+
+        public void AddCapsuleCollider()
+        {
+            Console.WriteLine("Added capsule collider");
+        }
+
     }
 }
