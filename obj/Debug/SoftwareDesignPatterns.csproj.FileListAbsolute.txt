@@ -6,3 +6,11 @@ D:\SAE_archive\Software Design Patterns\SoftwareDesignPatterns\SoftwareDesignPat
 D:\SAE_archive\Software Design Patterns\SoftwareDesignPatterns\SoftwareDesignPatterns\obj\Debug\SoftwareDesignPatterns.csproj.CoreCompileInputs.cache
 D:\SAE_archive\Software Design Patterns\SoftwareDesignPatterns\SoftwareDesignPatterns\obj\Debug\SoftwareDesignPatterns.exe
 D:\SAE_archive\Software Design Patterns\SoftwareDesignPatterns\SoftwareDesignPatterns\obj\Debug\SoftwareDesignPatterns.pdb
+C:\Users\x79\Documents\GitHub\SoftwareDesignPatterns\bin\Debug\SoftwareDesignPatterns.exe.config
+C:\Users\x79\Documents\GitHub\SoftwareDesignPatterns\bin\Debug\SoftwareDesignPatterns.exe
+C:\Users\x79\Documents\GitHub\SoftwareDesignPatterns\bin\Debug\SoftwareDesignPatterns.pdb
+C:\Users\x79\Documents\GitHub\SoftwareDesignPatterns\obj\Debug\SoftwareDesignPatterns.csproj.AssemblyReference.cache
+C:\Users\x79\Documents\GitHub\SoftwareDesignPatterns\obj\Debug\SoftwareDesignPatterns.csproj.SuggestedBindingRedirects.cache
+C:\Users\x79\Documents\GitHub\SoftwareDesignPatterns\obj\Debug\SoftwareDesignPatterns.csproj.CoreCompileInputs.cache
+C:\Users\x79\Documents\GitHub\SoftwareDesignPatterns\obj\Debug\SoftwareDesignPatterns.exe
+C:\Users\x79\Documents\GitHub\SoftwareDesignPatterns\obj\Debug\SoftwareDesignPatterns.pdb

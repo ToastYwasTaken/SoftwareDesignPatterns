@@ -112,6 +112,9 @@ namespace SoftwareDesignPatterns
             //Console.WriteLine("deep copy kept all changes");
             //deepCopy.PrintColor();
             #endregion
+            #region FlyWeight
+            CarStore carStore = new CarStore();
+            #endregion
 
             Console.ReadLine();
         }
