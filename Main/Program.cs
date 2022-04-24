@@ -1,12 +1,8 @@
 ﻿using SoftwareDesignPatterns.Patterns;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 /// <summary>
-/// Test patterns here
+/// Test all patterns here
 /// Find all patterns at: https://www.dofactory.com/net
 /// </summary>
 
@@ -113,9 +109,76 @@ namespace SoftwareDesignPatterns
             //deepCopy.PrintColor();
             #endregion
             #region FlyWeight
-            CarStore carStore = new CarStore();
+            //CarStore carStore = new CarStore();
             #endregion
+            #region Iterator
+            //Console.WriteLine();
 
+            ////Create new aggregate
+            //Console.WriteLine("Creating Aggregate");
+            //Aggregate aggregate = new Aggregate();
+
+            ////Add items to the aggregates collection / list
+            //Console.WriteLine("Filling Aggregate's List:");
+            //aggregate[0] = "Item A";
+            //aggregate[1] = "Item B";
+            //aggregate[2] = "Item C";
+            //aggregate[3] = "Item D";
+
+            ////Create Iterator and provide the aggregate
+            //Iterator iter = aggregate.CreateIterator();
+            //Console.WriteLine("Iterating over Aggregate:");
+            //object item = iter.First();
+            //while (item != null) 
+            //{
+            //    Console.WriteLine(item);
+            //    item = iter.Next();
+            //}
+            #endregion
+            #region Observer
+            //Console.WriteLine();
+
+            ////Creating subjects
+            //ConcreteSubject concreteSubject1 = new ConcreteSubject("(Concrete Subject 1)");
+            //ConcreteSubject concreteSubject2 = new ConcreteSubject("(Concrete Subject 2)");
+            //Console.WriteLine($"Created {ConcreteSubject._instancesCount} subjects: {concreteSubject1._name} | {concreteSubject2._name}\n");
+
+            ////Creating observers
+            //Observer observer1 = new Observer(concreteSubject1, $"[Observer 1, observing {concreteSubject1._name}]");
+            //Observer observer2 = new Observer(concreteSubject1, $"[Observer 2, observing {concreteSubject1._name}]");
+            //Observer observer3 = new Observer(concreteSubject2, $"[Observer 3, observing {concreteSubject2._name}]");
+            //Console.WriteLine($"Created {Observer._instancesCount} observers: {observer1._name} | {observer2._name} | {observer3._name}\n");
+
+            ////Subscribe the subjects to the observers
+            //concreteSubject1.Subscribe(observer1);
+            //concreteSubject1.Subscribe(observer2);
+            //concreteSubject2.Subscribe(observer3);
+            //Console.WriteLine();
+
+            ////Set the state of one subject
+            //concreteSubject1.SubjectState = "State 1";
+            //Console.WriteLine($"Setting subject state of {concreteSubject1._name} to: [{concreteSubject1.SubjectState}]");
+            //Console.WriteLine();
+
+            ////Notify all observing objects (observer1 and 2) of the changes
+            //concreteSubject1.Notify();
+            ////As you can see, the notified observers(1 and 2) are setting their states accordingly
+            #endregion
+            #region Command
+            //Console.WriteLine();
+
+            ////Creating receiver, invoker and command
+            //Receiver receiver = new Receiver();
+            //Command command = new ConcreteCommand(receiver);
+            //Invoker invoker = new Invoker();
+
+            ////Set command
+            //invoker.SetCommand(command);
+
+            ////Execute command
+            //invoker.ExecuteCommand();
+
+            #endregion
             Console.ReadLine();
         }
 
